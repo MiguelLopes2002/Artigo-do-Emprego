@@ -5,11 +5,11 @@ clear all
 set more off
 
 * Definir diretório de trabalho
-cd "C:/Users/Miguel/Desktop/Trabalho do Tillmãe/"
+cd "C:/Users/Miguel/Desktop/Trabalho do Tillmann/"
 
 * Importar a base de dados da RAIS, mantendo apenas as variáveis necessárias
-import delimited "RAIS_VINC_PUB_SUL.txt", delimiter(";") varnames(1) clear
-keep idade escolaridadeapós2005 raçacor sexotrabalhador vlremunmédianom tipovínculo faixahoracontrat indtrabintermitente tamanhoestabelecimento cnae20classe indsimples tempoemprego
+import delimited "RAIS_VINC_PUB_SUL_2022.txt", delimiter(";") varnames(1) clear
+keep idade escolaridadeapós2005 raçacor sexotrabalhador vlremunmédianom tipovínculo faixahoracontrat indtrabintermitente tamanhoestabelecimento cnae20classe indsimples tempoemprego cboocupação2002
 
 * Substituir valores inválidos (99) por um valor apropriado (9 - Não Identificado)
 replace raçacor = 9 if raçacor == 99
@@ -48,9 +48,18 @@ gen idade_grupo = round(idade/5)*5
 * Criar faixas de remuneração para facilitar a análise
 gen vlremun_faixa = ceil(vlremunmédianom_clean / 500)
 
+* Calcular a frequência de cada valor de cnae20classe
+tabulate cnae20classe, sort
+* Iniciar o log para salvar a saída, já que não tem como ver o tabulate completo no Stata
+log using "frequencia_cbo.txt", text replace
+* Executar o comando
+tabulate cboocupação2002, sort
+* Fechar o log
+log close
+
 * Definir variáveis dependente e independentes como globais
 global ylist permanencia
-global xlist idade_grupo escolaridadeapós2005 raçacor sexotrabalhador tipovínculo faixahoracontrat indtrabintermitente tamanhoestabelecimento cnae20classe indsimples vlremun_faixa
+global xlist idade_grupo escolaridadeapós2005 raçacor sexotrabalhador indtrabintermitente tamanhoestabelecimento vlremun_faixa
 
 * Estatísticas descritivas
 describe $ylist $xlist
