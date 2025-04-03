@@ -1,0 +1,23 @@
+Subclasse:
+1. Transporte Rodoviário de Carga, Exceto Produtos Perigosos e Mudanças, Intermunicipal, Interestadual e Internacional - 4930202
+2. Comércio Varejista de Mercadorias em Geral, com Predominância de Produtos Alimentícios - Supermercados - 4711302
+3. Atividades de Atendimento Hospitalar, Exceto Pronto-Socorro e Unidades para Atendimento a Urgências - 8610101
+4. Restaurantes e Similares - 5611201
+5. Abate de Aves - 1012101
+6. Construção de Edifícios - 4120400
+7. Serviços Combinados de Escritório e Apoio Administrativo - 8211300
+8. Comércio Varejista de Artigos do Vestuário e Acessórios - 4781400
+9. Confecção de Peças do Vestuário, Exceto Roupas íntimas e as Confeccionadas Sob Medida - 1412601
+10. Limpeza em Prédios e em Domicílios - 8121400
+
+Classe:
+1. Comércio Varejista de Mercadorias em Geral, com Predominância de Produtos Alimentícios - Hipermercados | Supermercados - 47113
+2. Transporte Rodoviário de Carga, Exceto Produtos Perigosos e Mudanças, Municipal | Intermunicipal, Interestadual e Internacional | Transporte Rodoviário de Produtos Perigosos | Transporte Rodoviário de Mudanças - 49302
+3. Restaurantes e Similares | Bares e Outros Estabelecimentos Especializados em Servir Bebidas (Desativado) | Lanchonetes, Casas de Chá, de Sucos e Similares | Bares e Outros Estabelecimentos Especializados em Servir Bebidas, sem Entretenimento | Bares e Outros Estabelecimentos Especializados em Servir Bebidas, com Entretenimento - 56112
+4. Abate de Aves | Abate de Pequenos Animais | Frigorífico - Abate de Suínos | Matadouro - Abate de Suínos Sob Contrato - 10121
+5. Atividades de Atendimento Hospitalar, Exceto Pronto-Socorro e Unidades para Atendimento a Urgências | Atividades de Atendimento em Pronto-Socorro e Unidades Hospitalares para Atendimento a Urgências - 86101
+6. Confecção de Peças do Vestuário, Exceto Roupas íntimas e as Confeccionadas Sob Medida | Confecção, Sob Medida, de Peças do Vestuário, Exceto Roupas íntimas | Facção de Peças do Vestuário, Exceto Roupas íntimas - 14126
+7. Construção de Edifícios - 41204
+8. Serviços Combinados de Escritório e Apoio Administrativo - 82113
+9. Comércio Varejista de Artigos do Vestuário e Acessórios - 47814
+10. Comércio Varejista de Ferragens e Ferramentas | Comércio Varejista de Madeira e Artefatos | Comércio Varejista de Materiais Hidráulicos | Comércio Varejista de Cal, Areia, Pedra Britada, Tijolos e Telhas | Comércio Varejista de Materiais de Construção não Especificados Anteriormente | Comércio Varejista de Pedras para Revestimento | Comércio Varejista de Materiais de Construção em Geral - 47440

@@ -1,0 +1,267 @@
+Modelo completo [1 a 5 anos]
+
+. gologit2 tempo_ordinal ///
+>          i.sexotrabalhador i.estado i.raça i.escolaridade c.idade ///
+>          i.cbo_agrup i.cnae_agrupado i.nacionalidade i.afastamento i.porte ///
+>              i.horas i.tipovínculo i.natureza i.faixa_salario, or autofit lrforce
+
+------------------------------------------------------------------------------
+Testing parallel lines assumption using the .05 level of significance...
+
+Step  1:  Constraints for parallel lines imposed for 8.escolaridade (P Value = 0.8157)
+Step  2:  Constraints for parallel lines imposed for 5.escolaridade (P Value = 0.6060)
+Step  3:  Constraints for parallel lines imposed for 9.cnae_agrupado (P Value = 0.5980)
+Step  4:  Constraints for parallel lines imposed for 5.natureza (P Value = 0.3400)
+Step  5:  Constraints for parallel lines imposed for 7.cnae_agrupado (P Value = 0.3219)
+Step  6:  Constraints for parallel lines imposed for 2.cbo_agrup (P Value = 0.2879)
+Step  7:  Constraints for parallel lines imposed for 5.cbo_agrup (P Value = 0.6876)
+Step  8:  Constraints for parallel lines imposed for 1.estado (P Value = 0.2098)
+Step  9:  Constraints for parallel lines imposed for 2.porte (P Value = 0.0659)
+Step  10: Constraints for parallel lines are not imposed for 
+          2.sexotrabalhador (P Value = 0.00000)
+          2.estado (P Value = 0.00009)
+          1.raça (P Value = 0.00000)
+          2.escolaridade (P Value = 0.00000)
+          3.escolaridade (P Value = 0.00000)
+          4.escolaridade (P Value = 0.00000)
+          6.escolaridade (P Value = 0.00000)
+          7.escolaridade (P Value = 0.00000)
+          9.escolaridade (P Value = 0.02346)
+          idade (P Value = 0.00000)
+          1.cbo_agrup (P Value = 0.00000)
+          3.cbo_agrup (P Value = 0.00000)
+          4.cbo_agrup (P Value = 0.00000)
+          6.cbo_agrup (P Value = 0.00192)
+          7.cbo_agrup (P Value = 0.00000)
+          8.cbo_agrup (P Value = 0.00000)
+          9.cbo_agrup (P Value = 0.00174)
+          1.cnae_agrupado (P Value = 0.00000)
+          2.cnae_agrupado (P Value = 0.00000)
+          3.cnae_agrupado (P Value = 0.00000)
+          4.cnae_agrupado (P Value = 0.00000)
+          5.cnae_agrupado (P Value = 0.00000)
+          6.cnae_agrupado (P Value = 0.00000)
+          8.cnae_agrupado (P Value = 0.00000)
+          1.nacionalidade (P Value = 0.00000)
+          1.afastamento (P Value = 0.00000)
+          2.afastamento (P Value = 0.00000)
+          3.afastamento (P Value = 0.00000)
+          4.afastamento (P Value = 0.00000)
+          3.porte (P Value = 0.00000)
+          4.porte (P Value = 0.00000)
+          1.horas (P Value = 0.00000)
+          20.tipovínculo (P Value = 0.00000)
+          3.natureza (P Value = 0.00000)
+          2.faixa_salario (P Value = 0.00000)
+          3.faixa_salario (P Value = 0.00000)
+          4.faixa_salario (P Value = 0.00000)
+          5.faixa_salario (P Value = 0.00000)
+
+Wald test of parallel lines assumption for the final model:
+
+ ( 1)  [Até_1_ano]5.escolaridade - [1_a_5_anos]5.escolaridade = 0
+ ( 2)  [Até_1_ano]8.escolaridade - [1_a_5_anos]8.escolaridade = 0
+ ( 3)  [Até_1_ano]1.estado - [1_a_5_anos]1.estado = 0
+ ( 4)  [Até_1_ano]2.cbo_agrup - [1_a_5_anos]2.cbo_agrup = 0
+ ( 5)  [Até_1_ano]5.cbo_agrup - [1_a_5_anos]5.cbo_agrup = 0
+ ( 6)  [Até_1_ano]7.cnae_agrupado - [1_a_5_anos]7.cnae_agrupado = 0
+ ( 7)  [Até_1_ano]9.cnae_agrupado - [1_a_5_anos]9.cnae_agrupado = 0
+ ( 8)  [Até_1_ano]2.porte - [1_a_5_anos]2.porte = 0
+ ( 9)  [Até_1_ano]5.natureza - [1_a_5_anos]5.natureza = 0
+
+           chi2(  9) =    8.73
+         Prob > chi2 =    0.4627
+
+An insignificant test statistic indicates that the final model
+does not violate the proportional odds/ parallel lines assumption
+
+If you re-estimate this exact same model with gologit2, instead 
+of autofit you can save time by using the parameter
+
+pl(1b.escolaridade 5.escolaridade 8.escolaridade 1b.sexotrabalhador 0b.estado 1.estado 0
+> b.raça 0b.cbo_agrup 2.cbo_agrup 5.cbo_agrup 0b.cnae_agrupado 7.cnae_agrupado 9.cnae_ag
+> rupado 0b.nacionalidade 0b.afastamento 1b.porte 2.porte 0b.horas 10b.tipovínculo 2b.na
+> tureza 5.natureza 1b.faixa_salario)
+
+------------------------------------------------------------------------------
+
+Generalized Ordered Logit Estimates             Number of obs     =  4,733,392
+                                                LR chi2(85)       = 1347365.12
+                                                Prob > chi2       =     0.0000
+Log likelihood = -4456199.6                     Pseudo R2         =     0.1313
+
+ ( 1)  [Até_1_ano]5.escolaridade - [1_a_5_anos]5.escolaridade = 0
+ ( 2)  [Até_1_ano]8.escolaridade - [1_a_5_anos]8.escolaridade = 0
+ ( 3)  [Até_1_ano]1.estado - [1_a_5_anos]1.estado = 0
+ ( 4)  [Até_1_ano]2.cbo_agrup - [1_a_5_anos]2.cbo_agrup = 0
+ ( 5)  [Até_1_ano]5.cbo_agrup - [1_a_5_anos]5.cbo_agrup = 0
+ ( 6)  [Até_1_ano]7.cnae_agrupado - [1_a_5_anos]7.cnae_agrupado = 0
+ ( 7)  [Até_1_ano]9.cnae_agrupado - [1_a_5_anos]9.cnae_agrupado = 0
+ ( 8)  [Até_1_ano]2.porte - [1_a_5_anos]2.porte = 0
+ ( 9)  [Até_1_ano]5.natureza - [1_a_5_anos]5.natureza = 0
+---------------------------------------------------------------------------------------
+        tempo_ordinal | Odds Ratio   Std. Err.      z    P>|z|     [95% Conf. Interval]
+----------------------+----------------------------------------------------------------
+Até_1_ano             |
+      sexotrabalhador |
+            Feminino  |   .9974145   .0024513    -1.05   0.292     .9926216    1.002231
+                      |
+               estado |
+                  SC  |   .9067345   .0020818   -42.64   0.000     .9026634    .9108241
+                  PR  |   .9967874   .0025081    -1.28   0.201     .9918838    1.001715
+                      |
+                 raça |
+          Não branco  |   .7386492   .0019319  -115.82   0.000     .7348723    .7424454
+                      |
+         escolaridade |
+Ensino Fundamental..  |   1.389852   .0209467    21.84   0.000     1.349398     1.43152
+Ensino Fundamental..  |   1.346346   .0202804    19.74   0.000     1.307179    1.386688
+Ensino Médio Incom..  |   1.472116   .0222439    25.59   0.000     1.429158    1.516365
+Ensino Médio Compl..  |   1.208206   .0177096    12.90   0.000     1.173989     1.24342
+Ensino Superior In..  |   1.175706   .0179949    10.58   0.000      1.14096    1.211509
+Ensino Superior Co..  |   .9116368   .0137879    -6.12   0.000     .8850097    .9390651
+            Mestrado  |   .9549964   .0221181    -1.99   0.047     .9126149    .9993461
+           Doutorado  |   1.150409   .0514178     3.13   0.002      1.05392    1.255732
+                      |
+                idade |   1.044604   .0001071   425.44   0.000     1.044394    1.044814
+                      |
+            cbo_agrup |
+                GG 1  |    .546706   .1872109    -1.76   0.078     .2794301    1.069632
+                GG 2  |   .5676972   .1943799    -1.65   0.098     .2901782    1.110628
+                GG 3  |   .6075439   .2080241    -1.46   0.146     .3105452    1.188586
+                GG 4  |   .6827109   .2337543    -1.11   0.265     .3489738    1.335614
+                GG 5  |   .5156023   .1765338    -1.93   0.053     .2635587    1.008678
+                GG 6  |    .576339   .1974168    -1.61   0.108     .2945174    1.127834
+                GG 7  |   .4649442   .1591932    -2.24   0.025     .2376601    .9095894
+                GG 8  |   .6214288   .2127883    -1.39   0.165     .3176324    1.215788
+                GG 9  |   .5580629   .1911101    -1.70   0.089     .2852247    1.091891
+                      |
+        cnae_agrupado |
+             B,C,D,E  |   1.289583   .0124716    26.30   0.000     1.265369     1.31426
+                   F  |   .5202633   .0055823   -60.90   0.000     .5094365    .5313202
+                   G  |   .9761828   .0094984    -2.48   0.013     .9577426    .9949781
+                   H  |   .8347924   .0087169   -17.29   0.000     .8178812    .8520533
+                   I  |   .7498967   .0082488   -26.17   0.000     .7339024    .7662395
+           J,K,L,M,N  |   .9415057   .0095025    -5.97   0.000     .9230641    .9603158
+               O,P,Q  |   .8504042   .0082167   -16.77   0.000     .8344513    .8666621
+               R,S,U  |   .9529165   .0118086    -3.89   0.000     .9300509    .9763443
+                   T  |   .4185627   .1461639    -2.49   0.013     .2111141    .8298579
+                      |
+        nacionalidade |
+         Estrangeiro  |   .5190152   .0040928   -83.17   0.000     .5110551    .5270993
+                      |
+          afastamento |
+ Licença-maternidade  |   6.157128   .0766048   146.09   0.000     6.008802    6.309117
+            Acidente  |   1.963515   .0213904    61.94   0.000     1.922035     2.00589
+              Doença  |   1.756723   .0049571   199.68   0.000     1.747034    1.766465
+              Outros  |   4.934712    .130993    60.13   0.000     4.684534    5.198249
+                      |
+                porte |
+             Pequeno  |   .8045674   .0020938   -83.56   0.000      .800474    .8086818
+               Médio  |    .821735   .0029521   -54.65   0.000     .8159693    .8275416
+              Grande  |   .8897688    .002764   -37.60   0.000      .884368    .8952026
+                      |
+                horas |
+             6 horas  |   .9170417   .0043605   -18.21   0.000      .908535     .925628
+                      |
+          tipovínculo |
+               Rural  |   .9533825   .0143063    -3.18   0.001      .925751    .9818386
+                      |
+             natureza |
+Entidades sem Fins..  |   1.366208   .0077269    55.17   0.000     1.351147    1.381437
+Instituições Extra..  |   1.604677   .3850325     1.97   0.049     1.002644    2.568196
+                      |
+        faixa_salario |
+   R$2.214 a R$3.538  |   2.176061   .0055922   302.55   0.000     2.165129     2.18705
+  R$3.538 a R$15.254  |   3.842994   .0141618   365.32   0.000     3.815338    3.870852
+ R$15.254 a R$19.882  |   5.456651   .1133188    81.71   0.000      5.23901    5.683334
+   Acima de R$19.882  |   5.710555    .126337    78.75   0.000     5.468231    5.963618
+                      |
+                _cons |   .5091165   .1745502    -1.97   0.049      .260006    .9968984
+----------------------+----------------------------------------------------------------
+1_a_5_anos            |
+      sexotrabalhador |
+            Feminino  |   1.033382   .0026399    12.85   0.000      1.02822    1.038569
+                      |
+               estado |
+                  SC  |   .9067345   .0020818   -42.64   0.000     .9026634    .9108241
+                  PR  |   .9864921   .0025299    -5.30   0.000     .9815461    .9914631
+                      |
+                 raça |
+          Não branco  |   .6542186   .0019482  -142.49   0.000     .6504113    .6580481
+                      |
+         escolaridade |
+Ensino Fundamental..  |   1.623724   .0243774    32.29   0.000     1.576641    1.672213
+Ensino Fundamental..  |   1.578715   .0237477    30.35   0.000      1.53285    1.625953
+Ensino Médio Incom..  |   1.621012   .0246652    31.75   0.000     1.573382    1.670083
+Ensino Médio Compl..  |   1.208206   .0177096    12.90   0.000     1.173989     1.24342
+Ensino Superior In..  |   1.131118   .0174826     7.97   0.000     1.097367    1.165908
+Ensino Superior Co..  |   .9376729   .0141656    -4.26   0.000     .9103158    .9658522
+            Mestrado  |   .9549964   .0221181    -1.99   0.047     .9126149    .9993461
+           Doutorado  |   1.046222   .0359984     1.31   0.189     .9779933    1.119211
+                      |
+                idade |    1.07446   .0001139   677.34   0.000     1.074237    1.074683
+                      |
+            cbo_agrup |
+                GG 1  |   .6450705   .2208835    -1.28   0.200     .3297166    1.262041
+                GG 2  |   .5676972   .1943799    -1.65   0.098     .2901782    1.110628
+                GG 3  |   .6303121   .2158172    -1.35   0.178     .3221858    1.233118
+                GG 4  |    .754554   .2583522    -0.82   0.411     .3856976    1.476161
+                GG 5  |   .5156023   .1765338    -1.93   0.053     .2635587    1.008678
+                GG 6  |   .5972645   .2045756    -1.50   0.132     .3052196    1.168748
+                GG 7  |   .4744046   .1624309    -2.18   0.029     .2424972    .9280919
+                GG 8  |   .7071666   .2421408    -1.01   0.312     .3614614    1.383507
+                GG 9  |    .572657   .1961008    -1.63   0.104     .2926907    1.120418
+                      |
+        cnae_agrupado |
+             B,C,D,E  |    1.60317   .0153539    49.28   0.000     1.573358    1.633547
+                   F  |   .5693682   .0064204   -49.95   0.000     .5569225     .582092
+                   G  |   1.195035   .0116247    18.32   0.000     1.172467    1.218038
+                   H  |    .862259   .0090096   -14.18   0.000     .8447802    .8800995
+                   I  |   .8791524   .0101617   -11.14   0.000     .8594597    .8992964
+           J,K,L,M,N  |   .8666076    .008804   -14.09   0.000     .8495227    .8840361
+               O,P,Q  |   .8504042   .0082167   -16.77   0.000     .8344513    .8666621
+               R,S,U  |    1.00438   .0122251     0.36   0.720     .9807029    1.028629
+                   T  |   .4185627   .1461639    -2.49   0.013     .2111141    .8298579
+                      |
+        nacionalidade |
+         Estrangeiro  |   .3126961   .0042088   -86.37   0.000     .3045549     .321055
+                      |
+          afastamento |
+ Licença-maternidade  |   1.669574   .0152881    55.98   0.000     1.639878    1.699809
+            Acidente  |   .7930279   .0080333   -22.89   0.000     .7774381    .8089303
+              Doença  |   1.145232   .0031114    49.91   0.000      1.13915    1.151346
+              Outros  |    4.25265   .0764995    80.47   0.000     4.105327    4.405261
+                      |
+                porte |
+             Pequeno  |   .8045674   .0020938   -83.56   0.000      .800474    .8086818
+               Médio  |   .8493674   .0030735   -45.12   0.000     .8433647    .8554128
+              Grande  |   .9640059   .0030166   -11.71   0.000     .9581115    .9699365
+                      |
+                horas |
+             6 horas  |    1.03207   .0050759     6.42   0.000     1.022169    1.042067
+                      |
+          tipovínculo |
+               Rural  |    1.31854   .0184017    19.81   0.000     1.282962    1.355104
+                      |
+             natureza |
+Entidades sem Fins..  |   1.752282   .0092768   105.95   0.000     1.734194    1.770559
+Instituições Extra..  |   1.604677   .3850325     1.97   0.049     1.002644    2.568196
+                      |
+        faixa_salario |
+   R$2.214 a R$3.538  |   1.830708   .0051867   213.44   0.000     1.820571    1.840902
+  R$3.538 a R$15.254  |   4.675615   .0158237   455.74   0.000     4.644704    4.706732
+ R$15.254 a R$19.882  |   7.331004   .1051014   138.95   0.000     7.127876     7.53992
+   Acima de R$19.882  |   6.680119   .0997292   127.21   0.000     6.487486    6.878473
+                      |
+                _cons |   .0182622   .0062613   -11.68   0.000     .0093264    .0357597
+---------------------------------------------------------------------------------------
+Note: _cons estimates baseline odds.
+
+WARNING! 2 in-sample cases have an outcome with a predicted probability that is
+less than 0. See the gologit2 help section on Warning Messages for more information.
+
+. 
+end of do-file
+
+. 

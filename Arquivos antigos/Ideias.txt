@@ -1,0 +1,24 @@
+No logit ordenado, se eu pegar os que manteram emprego por até 1 ano, eu estarei pegando o pessoal que entrou recentemente também no emprego, que pode ser um pessoal que manteria o emprego por mais tempo e eu estaria sujando a estimação.
+
+Na causa do afastamento, o 99 é provavelmente o cara que não se afastou. Daí o resto é afastamento por doença ou outra coisa. Se o cara se afastou, pode ser que ele tenha mantido o emprego por estar recebendo afastado, o que pode sujar minha estimação. 2,6 milhões se afastaram por doença não relacionada ao trabalho, por exemplo.
+Talvez manter só o pessoal 99.
+
+No motivo do desligamento, eu posso tirar o pessoal que escolheu sair, já que eu tô analisando a capacidade do cabra de manter o emprego, o que depende de ele querer continuar nele.
+
+Testes para ver se os Betas estimados são iguais a todas as classes do olog (teste das retas paralelas, ou odds ratios proporcionais):
+https://www.youtube.com/watch?v=Oeqer86uI2A
+36:05
+
+dropei quem era indtrabintermitente = 1 porque eles vão ser demitidos mesmo, daí eu estaria sujando minhas estimação mantendo eles.
+
+dropei quem tinha deficiência "tipodefic", deixando apenas tipodefic == 0 & 6, que são quem não tinha e quem era reabilitado
+
+Posso estar vendo 2 coisas, quem consegue manter o emprego ou quem quer manter o emprego por mais tempo. Os resultados podem estar gerando uma ambiguidade
+
+Excluir CAEPF e CNO torna a amostra mais homogênea e reflete melhor a dinâmica de contratação e permanência típica do setor empresarial formal, já que CNO geralmente ligado a obras de construção civil e pode refletir contratos muito específicos, às vezes temporários ou sazonais, e não exatamente um “estabelecimento” perene; e CAEPF envolve produtores rurais pessoas físicas, profissionais liberais etc., cujo vínculo trabalhista pode ser bem diferente de uma empresa com CNPJ. Mas eu posso manter o CNO para ver se (e como) trabalhar em CNO ou CAEPF influencia a probabilidade de permanência. Até então não o fiz, só excluí
+
+Posso verificar, criando uma variável, se quem se afastou por algum motivo aumenta ou diminui a probabilidade de demissão, por exemplo, licença-maternidade (pode ser também que exista a demissão pra cuidar da criança também, então estaria estimando uma regressão espúria)
+
+proportional odds assumption; parallel regressions assumption; parallel-lines assumption; gologit2 uses the terminology parallel lines, but others may use different but equivalent phrasings.
+
+Se os brancos mantém o emprego por mais tempo que as minorias, o fato pode não ser uma questão de preconceito no sentido de tempo de serviço, se pensar pela lógica do preconceito, mas uma questão de preconceito, se pensar assim, na questão de entrada em empregos melhores. Brancos podem obter espaços melhores, que oferecem melhores condições de trabalho e, portanto, maior incentivo a trabalhar melhor e manter o emprego por mais tempo, enquanto não brancos podem receber incentivos a ter mais rotatividade por uma questão de estrutural, do local que conseguem alcançar, pela lógica de rotatividade por preconceito. Ou pode ser uma coincidência, dada o baixo nível amostral das outras raças, que coincidentemente tiveram indivíduos com baixa retenção de tempo de serviço
